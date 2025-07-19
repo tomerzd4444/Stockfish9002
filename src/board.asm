@@ -35,6 +35,9 @@ print_board:
         ; for (rcx = 0; rcx <= BOARD_SIZE; rcx ++)
         cmp rcx, BOARD_SIZE
         jne print_board_piece
+
+        write_char_to_stdout new_line
+
         pop rcx
         pop rbx
         mov rsp, rbp
