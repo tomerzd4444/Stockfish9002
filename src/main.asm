@@ -10,6 +10,7 @@ _start:
     call get_user_move
     mov rdi, rax
     call move_piece
+    call print_board
 _fin:
     mov rax, SYS_EXIT
     mov rdi, 0
